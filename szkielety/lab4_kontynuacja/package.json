@@ -1,0 +1,22 @@
+{
+    "scripts": {
+        "start": "node app/server.js",
+        "dev": "nodemon app/server.js"
+    },
+    "name": "express-serwer",
+    "description": "Prosta aplikacja serwerowa oparta na szkielecie Express",
+    "main": "app/server.js",
+    "keywords": [
+        "express",
+        "serwer"
+    ],
+    "author": "Jan",
+    "dependencies": {
+        "express": "^4.21.2",
+        "express-validator": "^7.2.1",
+        "hbs": "^4.2.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}

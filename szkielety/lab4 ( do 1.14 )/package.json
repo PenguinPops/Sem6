@@ -1,0 +1,21 @@
+{
+    "scripts": {
+        "start": "node app/zad_01.js",
+        "dev": "nodemon app/zad_01.js"
+    },
+    "name": "express-serwer",
+    "description": "Prosta aplikacja serwerowa oparta na szkielecie Express",
+    "main": "app/zad_01.js",
+    "keywords": [
+        "express",
+        "serwer"
+    ],
+    "author": "Jan",
+    "dependencies": {
+        "express": "^4.21.2",
+        "express-validator": "^7.2.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
