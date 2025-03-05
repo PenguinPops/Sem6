@@ -1,0 +1,13 @@
+docker container ls -> docker ps -a (wyswietlenie kontenerow) (-a żeby spauzowane)
+
+docker run -dt --name test1 ubuntu
+docker kill test1
+docker run -d --name test666 node
+
+docker ps -a (-s) --filter name=test
+
+docker run -it ubuntu /bin/bash
+
+docker image ls
+
+docker commit test666 test667
