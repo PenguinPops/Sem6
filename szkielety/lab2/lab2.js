@@ -153,3 +153,4 @@ const calc = (a, b, p) => {
 // c)
 // export default calc;
 
+zadanie2_1();
