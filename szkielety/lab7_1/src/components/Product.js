@@ -6,7 +6,7 @@ const Product = ({ product, onDelete }) => {
     const [isChecked, setIsChecked] = useState(false)
     return (
         <div className='product'>
-            {product.category === "diary" && <GiMilkCarton className='category'></GiMilkCarton> }
+            {product.category === "dairy" && <GiMilkCarton className='category'></GiMilkCarton> }
             {product.category === "fruit&vagetables" && <GiShinyApple className='category'></GiShinyApple> }
             {product.category === "bread" && <GiSlicedBread className='category'></GiSlicedBread> }
             <div className='product-info'>

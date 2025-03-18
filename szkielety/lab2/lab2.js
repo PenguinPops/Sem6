@@ -3,6 +3,7 @@
 // INTERNETOWYCH
 
 function zadanie2_1() {
+    console.log("Zadanie 2.1");
 
     function sumator(...argumenty) {
         console.log("Suma liczb: " + argumenty.join(", ") + " wynosi " + argumenty.reduce((a, b) => a + b, 0));
@@ -12,6 +13,7 @@ function zadanie2_1() {
 }
 
 function zadanie2_2() {
+    console.log("Zadanie 2.2");
 
     const listaZadan = [
         {
@@ -52,6 +54,7 @@ function zadanie2_2() {
 }
 
 function zadanie2_3() {
+    console.log("Zadanie 2.3");
     const poniedzialek = [
         {
             'nazwa': 'Przygotowania do zajęć z AI',
@@ -93,6 +96,7 @@ function zadanie2_3() {
 }
 
 function zadanie2_4() {
+    console.log("Zadanie 2.4");
     const firmy = [
         { nazwa: "Abasco", kategoria: "IT", poczatek: 1999, koniec: 2010 },
         { nazwa: "Redis", kategoria: "IT", poczatek: 1993, koniec: 1998 },
@@ -118,6 +122,10 @@ function zadanie2_4() {
     function dzialalnosc2() {
         console.log(firmy.filter((firma) => firma.koniec - firma.poczatek > 10));
     }
+
+    firmaIT();
+    dzialalnosc();
+    dzialalnosc2();
 
 }
 
@@ -154,3 +162,6 @@ const calc = (a, b, p) => {
 // export default calc;
 
 zadanie2_1();
+zadanie2_2();
+zadanie2_3();
+zadanie2_4();

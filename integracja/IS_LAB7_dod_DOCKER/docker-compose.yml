@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./rest_api
+      dockerfile: Dockerfile
+    ports:
+      - "8000:80"
+    depends_on:
+      - db
+
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: world
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+    volumes:
+      - ./db_dumps/world.sql:/docker-entrypoint-initdb.d/world.sql
+    ports:
+      - "3306:3306"
