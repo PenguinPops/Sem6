@@ -45,7 +45,7 @@ INSERT INTO `E_kromka`.`Zamowienia` (`id`, `uzytkownik_id`, `data_zamowienia`, `
 (1, 1, '2023-10-01 12:00:00', 11.98, NULL, 'ul. Kwiatowa 1, 00-001 Warszawa', 'Kurier', 'Karta', 'Nowe'),  -- Zamówienie 1, Jan Kowalski
 (2, 2, '2023-10-02 14:00:00', 12.50, 'RABAT10', 'ul. Lipowa 2, 00-002 Kraków', 'Poczta', 'Przelew', 'W trakcie');  -- Zamówienie 2, Anna Nowak
 
--- Wypełnianie tabeli PozycjeZamowienia
+-- Wypełnianie tabeli PozycjeZamowienia 
 INSERT INTO `E_kromka`.`PozycjeZamowienia` (`id`, `zamowienie_id`, `produkt_id`, `ilosc`, `cena`) VALUES
 (1, 1, 1, 2, 5.99),  -- Zamówienie 1, Chleb pszenny, ilość 2, cena 5.99
 (2, 2, 2, 5, 2.50);  -- Zamówienie 2, Bułka kajzerka, ilość 5, cena 2.50

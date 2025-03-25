@@ -1,6 +1,8 @@
 // StudentController.js
 // Kontroler danych studenta
 
+const { ObjectId } = require('mongodb');
+
 async function insert(req, res, Student) {
     const studentData = {
         fullName: req.body.fullName,
@@ -10,7 +12,7 @@ async function insert(req, res, Student) {
     };
 
     try {
-        await Student.insertOne(studentData); // Używamy insertOne do dodania nowego studenta
+        await Student.insertOne(studentData);
         res.redirect("/list");
     } catch (err) {
         console.log("Błąd podczas dodawania studenta: " + err);
@@ -27,7 +29,10 @@ async function update(req, res, Student) {
     };
 
     try {
-        await Student.updateOne({ _id: req.body._id }, { $set: studentData });
+        await Student.updateOne(
+            { _id: new ObjectId(req.body._id) }, 
+            { $set: studentData }
+        );
         res.redirect("/list");
     } catch (err) {
         console.log("Błąd podczas aktualizowania danych: " + err);

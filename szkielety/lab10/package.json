@@ -1,0 +1,15 @@
+{
+  "name": "lab10",
+  "version": "1.0.0",
+  "main": "filterTest.js",
+"scripts": {
+  "test": "jest --testMatch \"**/filterTest.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

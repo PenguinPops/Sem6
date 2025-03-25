@@ -20,7 +20,6 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 require('dotenv').config();
 
 
-// Zmienna z połączeniem do MongoDB Atlas
 const uri = process.env.MONGO_URI;
 
 const client = new MongoClient(uri, {
@@ -36,13 +35,11 @@ async function connectDB() {
         // Łączenie z MongoDB Atlas
         await client.connect();
         console.log("✅ Połączono z MongoDB Atlas!");
-        // Zwróć połączenie do bazy danych "StudentDB"
         return client.db("StudentDB");
     } catch (err) {
         console.error("❌ Błąd połączenia z MongoDB:", err);
-        process.exit(1); // Zatrzymaj aplikację, jeśli połączenie się nie uda
+        process.exit(1);
     }
 }
 
-// Eksportuj funkcję, aby łączyć się z bazą w innych częściach aplikacji
 module.exports = connectDB;
