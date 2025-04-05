@@ -6,10 +6,7 @@ const Post = require("./models/Post")
 let app
 
 beforeEach(async () => {
-  await mongoose.connect("mongodb://localhost:27017/postsdb_test", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
+  await mongoose.connect("mongodb://localhost:27017/postsdb_test")
   app = createServer()
 })
 
@@ -28,7 +25,7 @@ describe("POST /api/posts", () => {
     const response = await supertest(app)
       .post("/api/posts")
       .send(data)
-      .expect(200)
+      .expect(201)
 
     // Sprawdzenie odpowiedzi
     expect(response.body._id).toBeTruthy()

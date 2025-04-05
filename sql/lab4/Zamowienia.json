@@ -1,0 +1,23 @@
+[
+    {
+      "_id": 1,
+      "uzytkownik_id": 1,
+      "data_zamowienia": "2023-10-01T12:00:00",
+      "suma": 11.98,
+      "adres_dostawy": "ul. Kwiatowa 1, 00-001 Warszawa",
+      "metoda_dostawy": "Kurier",
+      "metoda_platnosci": "Karta",
+      "status": "Nowe",
+      "pozycje": [
+        {
+          "produkt_id": 1,
+          "ilosc": 2,
+          "cena": 5.99
+        }
+      ],
+      "faktura": {
+        "data_faktury": "2023-10-01T12:30:00",
+        "suma": 11.98
+      }
+    }
+  ]

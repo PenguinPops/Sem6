@@ -1,0 +1,20 @@
+[
+    {
+      "_id": 1,
+      "nazwa": "Chleb pszenny",
+      "opis": "Świeży chleb pszenny",
+      "cena": 5.99,
+      "ilosc_na_stanie": 50,
+      "kategoria_id": 1,
+      "przepis_id": 1
+    },
+    {
+      "_id": 2,
+      "nazwa": "Bułka kajzerka",
+      "opis": "Basic bułka",
+      "cena": 2.50,
+      "ilosc_na_stanie": 300,
+      "kategoria_id": 2,
+      "przepis_id": 2
+    }
+  ]

@@ -1,0 +1,14 @@
+[
+    {
+      "_id": 1,
+      "zamowienie_id": 1,
+      "pracownik_id": 1,
+      "status": "W trakcie"
+    },
+    {
+      "_id": 2,
+      "zamowienie_id": 2,
+      "pracownik_id": 2,
+      "status": "Nowe"
+    }
+  ]

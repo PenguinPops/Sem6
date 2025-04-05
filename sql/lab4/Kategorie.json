@@ -1,0 +1,14 @@
+[
+    {
+        "_id": 1,
+        "nazwa": "Chleby regionalne",
+        "data_poczatku_wyswietlania": "2023-01-01",
+        "data_konca_wyswietlania": "2023-12-31"
+    },
+    {
+        "_id": 2,
+        "nazwa": "Bułki",
+        "data_poczatku_wyswietlania": "2023-01-01",
+        "data_konca_wyswietlania": "2023-12-31"
+    }
+]   

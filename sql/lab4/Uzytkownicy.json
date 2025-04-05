@@ -1,0 +1,30 @@
+[
+    {
+      "_id": 1,
+      "imie": "Jan",
+      "nazwisko": "Kowalski",
+      "email": "jan.kowalski@example.com",
+      "telefon": "123456789",
+      "konto_id": 1,
+      "adresy": [
+        {
+          "_id": 1,
+          "adres": "ul. Kwiatowa 1, 00-001 Warszawa"
+        }
+      ]
+    },
+    {
+      "_id": 2,
+      "imie": "Anna",
+      "nazwisko": "Nowak",
+      "email": "anna.nowak@example.com",
+      "telefon": "987654321",
+      "konto_id": 2,
+      "adresy": [
+        {
+          "_id": 2,
+          "adres": "ul. Lipowa 2, 00-002 Kraków"
+        }
+      ]
+    }
+  ]

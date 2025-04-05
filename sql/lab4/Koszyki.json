@@ -1,0 +1,22 @@
+[
+    {
+      "_id": 1,
+      "uzytkownik_id": 1,
+      "pozycje": [
+        {
+          "produkt_id": 1,
+          "ilosc": 2
+        }
+      ]
+    },
+    {
+      "_id": 2,
+      "uzytkownik_id": 2,
+      "pozycje": [
+        {
+          "produkt_id": 2,
+          "ilosc": 5
+        }
+      ]
+    }
+  ]

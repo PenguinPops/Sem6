@@ -1,0 +1,18 @@
+# Pull minimal image
+FROM alpine:latest
+
+# Install Nginx
+RUN apk add --update nginx && \
+rm -rf /var/cache/apk/*
+
+# Copy default config
+COPY default /etc/nginx/sites-available/default
+
+# Expost port for nginx
+EXPOSE 80/tcp
+
+# Set the entrypoint which is the nginx binary
+ENTRYPOINT [ "nginx" ]
+
+# Run nginx in foreground
+CMD [ "-g", "daemon off;" ]

@@ -1,0 +1,14 @@
+[
+    {
+      "_id": 1,
+      "nazwa": "Chleb pszenny",
+      "opis": "Tradycyjny chleb pszenny",
+      "instrukcje": "Wymieszaj składniki, wyrabiaj ciasto, piecz przez 30 minut."
+    },
+    {
+      "_id": 2,
+      "nazwa": "Bułka kajzerka",
+      "opis": "Basic bułka",
+      "instrukcje": "Wyrabiaj ciasto, formuj bułki, piecz przez 15 minut."
+    }
+  ]

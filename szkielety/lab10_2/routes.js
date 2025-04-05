@@ -30,14 +30,14 @@ router.post("/posts", async (req, res) => {
 // Usuń post
 router.delete("/posts/:id", async (req, res) => {
   try {
-    const removedPost = await Post.findByIdAndRemove(req.params.id)
-    if (!removedPost) {
-      return res.status(404).json({ message: "Post not found" })
+    const deletedPost = await Post.findByIdAndDelete(req.params.id);
+    if (!deletedPost) {
+      return res.status(404).json({ message: "Post not found" });
     }
-    res.json({ message: "Post deleted" })
+    res.status(200).json({ message: "Post deleted" });
   } catch (err) {
-    res.status(500).json({ message: err.message })
+    res.status(500).json({ message: err.message });
   }
-})
+});
 
 module.exports = router
