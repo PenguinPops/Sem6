@@ -1,0 +1,22 @@
+FROM scratch
+
+ADD alpine-minirootfs-3.21.3-x86_64.tar /
+
+RUN ["/bin/sh", "-c", "\
+    apk add --no-cache nodejs npm && \
+    mkdir -p /app"]
+
+WORKDIR /app
+
+COPY package.json .
+
+RUN npm init -y && npm install
+
+COPY index.js .
+
+ARG VERSION=1.0.1
+ENV VERSION=$VERSION
+
+EXPOSE 8080
+
+CMD [ "npm", "start" ]
